@@ -7,28 +7,28 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("24233765"))
+API_HASH = getenv("519019f681bf355123c3422a7379bc02")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7396064045:AAGWwVUcgWcu_WirDlBXs0rdE4xEqob1pCo")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://Sawn02:Sawn02@cluster0.twinbpi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("1002162980134))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1356469075))
+OWNER_ID = int(getenv("7408682347"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("3a57e70f-f56c-477f-861d-7eb0e446b598")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -62,11 +62,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("BQFxxyUAttj3mGtobg9lipwUGa9CsksS8EmY8JPf-6x6nMVoM8pJ1fPSFsOoxnYwR6lp6Vw8jzmpnl4q-QKkz441vwwt9YoEKqeCs7ne4HZhAeblegrdHpo2daChUP9YaOwngk3NqWPz1yrZ2o_TeBDLXUMtHUzkagAyCXzvo98ZySB-xD_PYU84viAW9LzUuPaWFcEiwopnYJHgJIlSCal8cM9iy7EyKz3VoxZnpy1QIw0el_MmJdwZ5QAklyTH4NNKzTzy8CiVJeYnxzelmrbHFd5ylFvJqmMgIFvAa5BOZHvuEsOm8dbS5iuTHWJacfJ0flQv-SkDRrq-pdVkJvUpPXbAbQAAAAFfgjemAA")
+STRING2 = getenv("BQFxxyUAttj3mGtobg9lipwUGa9CsksS8EmY8JPf-6x6nMVoM8pJ1fPSFsOoxnYwR6lp6Vw8jzmpnl4q-QKkz441vwwt9YoEKqeCs7ne4HZhAeblegrdHpo2daChUP9YaOwngk3NqWPz1yrZ2o_TeBDLXUMtHUzkagAyCXzvo98ZySB-xD_PYU84viAW9LzUuPaWFcEiwopnYJHgJIlSCal8cM9iy7EyKz3VoxZnpy1QIw0el_MmJdwZ5QAklyTH4NNKzTzy8CiVJeYnxzelmrbHFd5ylFvJqmMgIFvAa5BOZHvuEsOm8dbS5iuTHWJacfJ0flQv-SkDRrq-pdVkJvUpPXbAbQAAAAFfgjemAA"")
+STRING3 = getenv("BQFxxyUAttj3mGtobg9lipwUGa9CsksS8EmY8JPf-6x6nMVoM8pJ1fPSFsOoxnYwR6lp6Vw8jzmpnl4q-QKkz441vwwt9YoEKqeCs7ne4HZhAeblegrdHpo2daChUP9YaOwngk3NqWPz1yrZ2o_TeBDLXUMtHUzkagAyCXzvo98ZySB-xD_PYU84viAW9LzUuPaWFcEiwopnYJHgJIlSCal8cM9iy7EyKz3VoxZnpy1QIw0el_MmJdwZ5QAklyTH4NNKzTzy8CiVJeYnxzelmrbHFd5ylFvJqmMgIFvAa5BOZHvuEsOm8dbS5iuTHWJacfJ0flQv-SkDRrq-pdVkJvUpPXbAbQAAAAFfgjemAA"")
+STRING4 = getenv("BQFxxyUAttj3mGtobg9lipwUGa9CsksS8EmY8JPf-6x6nMVoM8pJ1fPSFsOoxnYwR6lp6Vw8jzmpnl4q-QKkz441vwwt9YoEKqeCs7ne4HZhAeblegrdHpo2daChUP9YaOwngk3NqWPz1yrZ2o_TeBDLXUMtHUzkagAyCXzvo98ZySB-xD_PYU84viAW9LzUuPaWFcEiwopnYJHgJIlSCal8cM9iy7EyKz3VoxZnpy1QIw0el_MmJdwZ5QAklyTH4NNKzTzy8CiVJeYnxzelmrbHFd5ylFvJqmMgIFvAa5BOZHvuEsOm8dbS5iuTHWJacfJ0flQv-SkDRrq-pdVkJvUpPXbAbQAAAAFfgjemAA"")
+STRING5 = getenv("BQFxxyUAttj3mGtobg9lipwUGa9CsksS8EmY8JPf-6x6nMVoM8pJ1fPSFsOoxnYwR6lp6Vw8jzmpnl4q-QKkz441vwwt9YoEKqeCs7ne4HZhAeblegrdHpo2daChUP9YaOwngk3NqWPz1yrZ2o_TeBDLXUMtHUzkagAyCXzvo98ZySB-xD_PYU84viAW9LzUuPaWFcEiwopnYJHgJIlSCal8cM9iy7EyKz3VoxZnpy1QIw0el_MmJdwZ5QAklyTH4NNKzTzy8CiVJeYnxzelmrbHFd5ylFvJqmMgIFvAa5BOZHvuEsOm8dbS5iuTHWJacfJ0flQv-SkDRrq-pdVkJvUpPXbAbQAAAAFfgjemAA"")
 
 
 BANNED_USERS = filters.user()
@@ -104,13 +104,14 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    if not re.match("(https://t.me/A
+    ZTX_ORG):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
 
 if SUPPORT_CHAT:
-    if not re.match("(?:http|https)://", SUPPORT_CHAT):
+    if not re.match("(https://t.me/Anime_Chat_Unite):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
