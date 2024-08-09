@@ -11,7 +11,7 @@ API_ID = int(getenv("20183627"))
 API_HASH = getenv("6ee2647119abfb228e59ce5254157963")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("7437976710:AAG7qFTRJaIPtHEU1UD0m3DXTjgOpJDRorA")
+BOT_TOKEN = getenv("6981997419:AAErPDMGUxxcXbiHkmBjw98X15NThOTK0Wg")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("mongodb+srv://GOKU:MISSBHOPALI@goku.pzzsl8d.mongodb.net/?retryWrites=true&w=majority")
@@ -40,7 +40,7 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ZTX_ORG")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Anime_Chat_Unite")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Anime_Chat_Group_International")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -78,13 +78,13 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/7d23c8eeaf6a91e82b7ac.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/233a442487ff4b2e6df0e.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/53e0f4fad846697d68265.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/a7d42ce0f4aeb2449b2ca.jpg"
 )
 PLAYLIST_IMG_URL = "https://graph.org//file/3dfcffd0c218ead96b102.png"
-STATS_IMG_URL = "https://telegra.ph/file/57cea313906cbb2e562ad.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/8fcc411b17f865d183267.jpg"
 TELEGRAM_AUDIO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
 TELEGRAM_VIDEO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
 STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
